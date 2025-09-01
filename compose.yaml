@@ -1,0 +1,21 @@
+services:
+
+    shinobi-tailwind-react-dashboardd:
+
+        container_name: shinobi-tailwind-react-dashboard
+        
+        image: softwareshinobi/shinobi-tailwind-react-dashboard:pristine
+
+        build: 
+
+            context: .
+
+            dockerfile: Dockerfile
+  
+        restart: unless-stopped
+
+        ports:
+
+            - 8000:80
+
+            - 80:80
