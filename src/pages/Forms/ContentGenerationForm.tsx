@@ -6,11 +6,15 @@ import GenerationUserTypeSelect from "../../components/form/form-elements/Genera
 
 import GenerationUserInputTextArea from "../../components/form/form-elements/GenerationUserInputTextArea";
 
+import GenerationAlerts from "../../components/form/form-elements/GenerationAlerts";
+
 import GenerationUserLensSelect from "../../components/form/form-elements/GenerationUserLensSelect";
 
 import GenerationSystemResponseTextArea from "../../components/form/form-elements/GenerationSystemResponseTextArea";
 
-export default function FormElements() {
+import GenerationUserActionButtons from "../../components/form/form-elements/GenerationUserActionButtons";
+
+export default function ContentGenerationForm() {
   return (
     <div>
       <PageMeta
@@ -23,6 +27,11 @@ export default function FormElements() {
 
             <GenerationUserTypeSelect />
             <GenerationUserInputTextArea />
+            
+            <GenerationAlerts />
+
+            <GenerationUserActionButtons />
+            
             <GenerationUserLensSelect />
             <GenerationSystemResponseTextArea />
 

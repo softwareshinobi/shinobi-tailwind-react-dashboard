@@ -4,7 +4,7 @@ services:
 
         container_name: shinobi-tailwind-react-dashboard
         
-        image: softwareshinobi/shinobi-tailwind-react-dashboard:pristine
+        image: softwareshinobi/shinobi-tailwind-react-dashboard:development
 
         build: 
 
