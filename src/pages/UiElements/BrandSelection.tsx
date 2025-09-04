@@ -2,9 +2,8 @@ import PageBreadcrumb from "../../components/common/PageBreadCrumb";
 
 import ThreeColumnImageGrid from "../../components/ui/images/ThreeColumnImageGrid";
 
-import CustomThreeColumnImageGrid from "../../components/ui/images/CustomThreeColumnImageGrid";
-
 import ComponentCard from "../../components/common/ComponentCard";
+
 import PageMeta from "../../components/common/PageMeta";
 
 export default function BrandSelection() {
@@ -16,20 +15,13 @@ export default function BrandSelection() {
       />
       
       <PageBreadcrumb pageTitle="Brand Selection" />
-      
+
       <div className="space-y-5 sm:space-y-6">
 
-        <ComponentCard title="Content Generation">
+        <ComponentCard title="Available Brands">
           <ThreeColumnImageGrid />
         </ComponentCard>
 
-        <ComponentCard title="22Ot222her Shit">
-          <CustomThreeColumnImageGrid />
-        </ComponentCard>
-
-        <ComponentCard title="LinkedIn Content">
-          <ThreeColumnImageGrid />
-        </ComponentCard>
       </div>
     </>
   );

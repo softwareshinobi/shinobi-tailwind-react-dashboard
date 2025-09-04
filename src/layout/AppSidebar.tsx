@@ -55,7 +55,7 @@ const navItems: NavItem[] = [
     ],
   },
     {
-    name: "Dev Template",
+    name: "Development",
     icon: <PageIcon />,
     subItems: [
 
