@@ -16,7 +16,7 @@ RUN find
 
 ##
 
-FROM nginx:stable-alpine AS production
+FROM softwareshinobi/react-nginx-template AS production
 
 COPY --from=build /app/dist /usr/share/nginx/html
 
