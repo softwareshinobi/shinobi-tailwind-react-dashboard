@@ -2,6 +2,13 @@ import { BrowserRouter as Router, Routes, Route } from "react-router";
 import SignIn from "./pages/AuthPages/SignIn";
 import SignUp from "./pages/AuthPages/SignUp";
 import NotFound from "./pages/OtherPage/NotFound";
+
+import GenerationPortal from "./pages/UiElements/GenerationPortal";
+
+import BrandSelection from "./pages/UiElements/BrandSelection";
+
+
+
 import UserProfiles from "./pages/UserProfiles";
 import Videos from "./pages/UiElements/Videos";
 import Images from "./pages/UiElements/Images";
@@ -11,13 +18,11 @@ import Avatars from "./pages/UiElements/Avatars";
 import Buttons from "./pages/UiElements/Buttons";
 import LineChart from "./pages/Charts/LineChart";
 import BarChart from "./pages/Charts/BarChart";
-import Calendar from "./pages/Calendar";
 import BasicTables from "./pages/Tables/BasicTables";
 import ContentGenerationForm from "./pages/Forms/ContentGenerationForm";
 import Blank from "./pages/Blank";
 import AppLayout from "./layout/AppLayout";
 import { ScrollToTop } from "./components/common/ScrollToTop";
-import Home from "./pages/Dashboard/Home";
 
 export default function App() {
   return (
@@ -27,11 +32,13 @@ export default function App() {
         <Routes>
           {/* Dashboard Layout */}
           <Route element={<AppLayout />}>
-            <Route index path="/" element={<Home />} />
+
+            <Route index path="/" element={<GenerationPortal />} />
+
+            <Route path="/brand-select" element={<BrandSelection />} />
 
             {/* Others Page */}
             <Route path="/profile" element={<UserProfiles />} />
-            <Route path="/calendar" element={<Calendar />} />
             <Route path="/blank" element={<Blank />} />
 
             {/* Forms */}
@@ -45,7 +52,8 @@ export default function App() {
             <Route path="/avatars" element={<Avatars />} />
             <Route path="/badge" element={<Badges />} />
             <Route path="/buttons" element={<Buttons />} />
-            <Route path="/images" element={<Images />} />
+                        <Route path="/images" element={<Images />} />
+<Route path="/images" element={<Images />} />
             <Route path="/videos" element={<Videos />} />
 
             {/* Charts */}
