@@ -21,7 +21,10 @@ import BarChart from "./pages/Charts/BarChart";
 import BasicTables from "./pages/Tables/BasicTables";
 import ContentGenerationForm from "./pages/Forms/ContentGenerationForm";
 import Blank from "./pages/Blank";
+import BlogSingle from "./pages/BlogSingle";
+
 import AppLayout from "./layout/AppLayout";
+
 import { ScrollToTop } from "./components/common/ScrollToTop";
 
 export default function App() {
@@ -40,6 +43,8 @@ export default function App() {
             {/* Others Page */}
             <Route path="/profile" element={<UserProfiles />} />
             <Route path="/blank" element={<Blank />} />
+
+            <Route path="/single" element={<BlogSingle />} />
 
             {/* Forms */}
             <Route path="/generate" element={<ContentGenerationForm />} />

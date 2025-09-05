@@ -1,0 +1,48 @@
+/* blog.css */
+
+/*
+  Base styles for the blog content container.
+  You can add this class to the main wrapper of your blog post.
+*/
+.blog-content {
+  line-height: 1.6;
+}
+
+/*
+  Sets a consistent bottom margin for all paragraphs within the .blog-content container.
+  This removes the need for multiple <br> tags.
+*/
+.blog-content p {
+  margin-bottom: 1.5rem; /* Adjust this value to change the spacing */
+}
+
+/*
+  Targets the last paragraph to remove the bottom margin,
+  preventing extra space at the end of the content.
+*/
+.blog-content p:last-child {
+  margin-bottom: 0;
+}
+.big-brand {
+  font-weight: bold;
+  color: red;
+  font-size: 2.5rem; /* Larger font size for emphasis */
+}
+
+.blog-content p {
+  margin-bottom: 1.5rem; /* Adjust this value to change the spacing */
+  font-size: 2em; /* Makes the text twice as big */
+  color: red; /* Added this rule to make all paragraph text purple */
+}
+
+.SINGLEBLOG p {
+  margin-bottom: 1.5rem; /* Adjust this value to change the spacing */
+  font-size: 2em; /* Makes the text twice as big */
+  color: yellowgreen; /* Added this rule to make all paragraph text purple */
+}
+
+.SINGLEBLOG h3 {
+  
+  color: hotpink; /* Added this rule to make all paragraph text purple */
+}
+

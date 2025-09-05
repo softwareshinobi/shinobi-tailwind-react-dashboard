@@ -60,6 +60,7 @@ const navItems: NavItem[] = [
     subItems: [
 
       { name: "Blank Page", path: "/blank", pro: false },
+          { name: "Single Content", path: "/single", pro: false },
       { name: "404 Error", path: "/error-404", pro: false },
       { name: "Tables", path: "/basic-tables", pro: false },
       { name: "Template (Paid)", path: "https://demo.tailadmin.com/", pro: false },
