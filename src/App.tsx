@@ -27,12 +27,17 @@ export default function App() {
         <Routes>
           {/* Dashboard Layout */}
           <Route element={<AppLayout />}>
-            <Route index path="/" element={<Home />} />
+
+            <Route index path="/" element={<GenerationPortal />} />
+
+            <Route path="/brand-select" element={<BrandSelection />} />
 
             {/* Others Page */}
             <Route path="/profile" element={<UserProfiles />} />
-            <Route path="/calendar" element={<Calendar />} />
             <Route path="/blank" element={<Blank />} />
+
+            <Route path="/single" element={<BlogSingle />} />
+            <Route path="/content" element={<SavedContent />} />
 
             {/* Forms */}
             <Route path="/generate" element={<ContentGenerationForm />} />
@@ -45,7 +50,8 @@ export default function App() {
             <Route path="/avatars" element={<Avatars />} />
             <Route path="/badge" element={<Badges />} />
             <Route path="/buttons" element={<Buttons />} />
-            <Route path="/images" element={<Images />} />
+                        <Route path="/images" element={<Images />} />
+<Route path="/images" element={<Images />} />
             <Route path="/videos" element={<Videos />} />
 
             {/* Charts */}
