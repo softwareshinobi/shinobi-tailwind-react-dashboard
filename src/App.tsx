@@ -22,6 +22,7 @@ import BasicTables from "./pages/Tables/BasicTables";
 import ContentGenerationForm from "./pages/Forms/ContentGenerationForm";
 import Blank from "./pages/Blank";
 import BlogSingle from "./pages/BlogSingle";
+import SavedContent from "./pages/SavedContent";
 
 import AppLayout from "./layout/AppLayout";
 
@@ -45,6 +46,7 @@ export default function App() {
             <Route path="/blank" element={<Blank />} />
 
             <Route path="/single" element={<BlogSingle />} />
+            <Route path="/content" element={<SavedContent />} />
 
             {/* Forms */}
             <Route path="/generate" element={<ContentGenerationForm />} />

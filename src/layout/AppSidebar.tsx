@@ -61,6 +61,8 @@ const navItems: NavItem[] = [
 
       { name: "Blank Page", path: "/blank", pro: false },
           { name: "Single Content", path: "/single", pro: false },
+                    { name: "Tabbed Content", path: "/content", pro: false },
+
       { name: "404 Error", path: "/error-404", pro: false },
       { name: "Tables", path: "/basic-tables", pro: false },
       { name: "Template (Paid)", path: "https://demo.tailadmin.com/", pro: false },
